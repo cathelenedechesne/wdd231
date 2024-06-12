@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* --- header starts here --- */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #0f3d20;
+    color: white;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* Adjust the space between the image and the heading */
+}
+
+header img {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    /* Adjust the border color and width */
+    border-radius: 50%;
+    /* This makes the image a circle if it's a square */
+}
+
+header>nav {
+    margin-top: 30px;
+    background-color: #cf6c71;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: larger;
+    color: #000;
+    padding: 10px;
+    /* Optional: add padding to the links for more clickable area */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #0f3d20;
+}
+
+
+
+/* --- Card Section --- */
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    margin-right: 10px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+/* --- footer starts here ---*/
+
+footer {
+    width: 100%;
+    justify-self: center;
+    background: #0f3d20;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+    padding: 2em;
+}

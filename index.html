@@ -9,19 +9,24 @@
     <meta name="author" content="Cathelène Dechesne">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style.small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/profile.webp" alt="Profile Picture" width="150" height="150" loading="lazy">
-        <h1>Cathelène Dechesne</h1>
+        <div>
+            <img src="images/profile.webp" alt="Profile Picture" width="150" height="150" loading="lazy">
+            <h1>Cathelène Dechesne</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="https://github.com/cathelenedechesne">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/cathelène-dechesne-443910256" class="active">LinkedIn</a>
+                <li><a href="https://www.linkedin.com/in/cathelène-dechesne-443910256">LinkedIn</a>
                 </li>
             </ul>
         </nav>
@@ -35,16 +40,40 @@
         <section class="card">
             <div id="place">
                 <h2>Canberra, Australia</h2>
+                <picture>
+                    <img src="images/canberra-parlement.webp" alt="parlement house in Canberra, Australia." width="200"
+                        height="250" loading="lazy">
+                    <figcaption>Parlement House - <br>
+                        Canberra, Australia</figcaption>
+                </picture>
             </div>
         </section>
         <section class="card">
             <div id="certificate">
                 <h2>Web and Computer Programming Certificate</h2>
+                <div class="buttons">
+                    <button onclick="showContent('content1')">All</button>
+                    <button onclick="showContent('content2')">CSE</button>
+                    <button onclick="showContent('content3')">WDD</button>
+                </div>
+                <div id="content1" class="content">
+                    <p>Content for All</p>
+                </div>
+                <div id="content2" class="content">
+                    <p>CSE 110</p>
+                    <p>CSE 111</p>
+                    <p>CES 210</p>
+                </div>
+                <div id="content3" class="content">
+                    <p>WDD 130</p>
+                    <p>WDD 131</p>
+                    <p>WDD 231</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="2024"></span> 🎨Cathelène Dechesne. Australia 🎨. Australia <img
+        <p>&copy; <span id="2024"></span> 🎨Cathelène Dechesne🎨. Australia <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/32px-Flag_of_Australia.svg.png"
                 alt="Australian Flag" width="32" height="16">
         </p>
