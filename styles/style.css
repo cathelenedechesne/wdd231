@@ -44,7 +44,7 @@ header img {
 
 header>nav {
     margin-top: 30px;
-    background-color: #cf6c71;
+    background-color: #ec9ea2;
     padding: 20px;
 }
 
@@ -83,15 +83,66 @@ nav ul li a.active {
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    display: flex;
+    /* Use Flexbox for card content */
+    flex-direction: column;
+    /* Arrange children in a column */
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically */
+    text-align: center;
+    /* Center text */
+    position: relative;
+    /* Enable absolute positioning for h2 */
+    padding-top: 60px;
+    /* Add space at the top for h2 */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust spacing as needed */
+    margin: 20px;
+}
+
+.card h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ec9ea2;
+    /* Background color for h2 box */
+    color: #0f3d20;
+    /* Text color */
+    padding: 10px;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+    /* Rounded top corners */
+    text-align: center;
+    margin-bottom: 20px;
+    /* Space between h2 and rest of content */
+}
+
+.card-content {
+    margin-top: 20px;
+    width: 100%;
+    /* Space between h2 and rest of content */
 }
 
 .buttons {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
     margin-bottom: 10px;
 }
 
 .buttons button {
-    margin-right: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .content {
@@ -100,6 +151,49 @@ nav ul li a.active {
 
 .content.active {
     display: block;
+}
+
+#certificate .buttons {
+    display: flex;
+    justify-content: center;
+    /* Center buttons horizontally */
+    margin-bottom: 20px;
+    /* Adjust margin as needed */
+    border-bottom: 1px solid #ccc;
+    /* Thin visible line */
+    padding-bottom: 10px;
+    /* Space below the line */
+}
+
+#certificate .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allow content to wrap if needed */
+    margin-top: 20px;
+    /* Space above the line */
+}
+
+#certificate .content {
+    width: 10%;
+    /* Adjust width as per your design */
+    text-align: center;
+}
+
+#certificate .content p {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #0f3d20;
+    color: white;
+    /* Center text inside each box */
+}
+
+#content3 p:last-child {
+    background-color: #fff;
+    color: black;
 }
 
 /* --- footer starts here ---*/

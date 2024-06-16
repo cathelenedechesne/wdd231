@@ -8,7 +8,7 @@
     <meta name="description" content="Home Page">
     <meta name="author" content="Cathelène Dechesne">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/style.small.css">
+    <link rel="stylesheet" href="styles/style-small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto&display=swap" rel="stylesheet">
@@ -30,44 +30,55 @@
                 </li>
             </ul>
         </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
     </header>
     <main>
-        <section class="card">
-            <div id="course-work">
+        <div class="card-container">
+            <section class="card">
                 <h2>Course Work</h2>
-            </div>
-        </section>
-        <section class="card">
-            <div id="place">
+                <div class="card-content" id="course-work">
+                    <!-- Content here -->
+                </div>
+            </section>
+            <section class="card">
                 <h2>Canberra, Australia</h2>
-                <picture>
-                    <img src="images/canberra-parlement.webp" alt="parlement house in Canberra, Australia." width="200"
-                        height="250" loading="lazy">
-                    <figcaption>Parlement House - <br>
-                        Canberra, Australia</figcaption>
-                </picture>
-            </div>
-        </section>
+                <div class="card-content" id="place">
+                    <picture>
+                        <img src="images/canberra-parlement.webp" alt="parlement house in Canberra, Australia."
+                            width="200" height="250" loading="lazy">
+                        <figcaption>Parlement House - <br>
+                            Canberra, Australia</figcaption>
+                    </picture>
+                </div>
+            </section>
+        </div>
         <section class="card">
-            <div id="certificate">
-                <h2>Web and Computer Programming Certificate</h2>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="card-content" id="certificate">
                 <div class="buttons">
                     <button onclick="showContent('content1')">All</button>
                     <button onclick="showContent('content2')">CSE</button>
                     <button onclick="showContent('content3')">WDD</button>
                 </div>
-                <div id="content1" class="content">
-                    <p>Content for All</p>
-                </div>
-                <div id="content2" class="content">
-                    <p>CSE 110</p>
-                    <p>CSE 111</p>
-                    <p>CES 210</p>
-                </div>
-                <div id="content3" class="content">
-                    <p>WDD 130</p>
-                    <p>WDD 131</p>
-                    <p>WDD 231</p>
+                <div class="content-wrapper">
+                    <div id="content1" class="content">
+                        <p>Content for All</p>
+                    </div>
+                    <div id="content2" class="content">
+                        <p>CSE 110</p>
+                        <p>CSE 111</p>
+                        <p>CES 210</p>
+                    </div>
+                    <div id="content3" class="content">
+                        <p>WDD 130</p>
+                        <p>WDD 131</p>
+                        <p>WDD 231</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,7 +90,6 @@
         </p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 
 </html>

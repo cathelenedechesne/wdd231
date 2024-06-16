@@ -1,0 +1,178 @@
+@media screen and (max-width: 768px) {
+    /* Adjust the max-width value as needed */
+
+    header {
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    header>nav {
+        display: none;
+        /* Hide the navigation links by default */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #ec9ea2;
+        padding: 10px;
+        z-index: 1000;
+        margin-top: 90px;
+        /* Ensure navigation is above other content */
+    }
+
+    header>nav.active {
+        display: block;
+        /* Display the navigation links when active */
+    }
+
+    header>nav ul {
+        text-align: center;
+    }
+
+    header>nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hamburger menu styles */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000;
+        /* Ensure it's above other content */
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+        /* Hide the middle bar when active */
+    }
+
+    .menu-toggle.active .bar:first-child {
+        transform: translateY(8px) rotate(45deg);
+        /* Rotate top bar */
+    }
+
+    .menu-toggle.active .bar:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+        /* Rotate bottom bar */
+    }
+
+    /* Cards one per row */
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Center cards vertically */
+        margin: 20px;
+        /* Adjust margin as needed */
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        /* Center content within the card */
+        border: 1px solid #ccc;
+        /* Ensure border or box-shadow for each card */
+        border-radius: 8px;
+        /* Rounded corners for the card */
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        /* Box shadow for card */
+    }
+
+    .card h2 {
+        background-color: #ec9ea2;
+        /* Background color for h2 box */
+        color: white;
+        /* Text color */
+        padding: 10px;
+        margin: 0;
+        border-radius: 8px 8px 0 0;
+        /* Rounded top corners */
+        margin-bottom: 10px;
+        /* Space between h2 and rest of content */
+    }
+
+    .card-content {
+        margin-top: 80px;
+        width: 100%;
+        /* Space between h2 and rest of content */
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        /* Center buttons horizontally */
+        margin-bottom: 10px;
+        /* Adjust margin as needed */
+    }
+
+    .buttons button {
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    #certificate .buttons {
+        margin-bottom: 20px;
+        /* Adjust margin as needed */
+        border-bottom: 1px solid #ccc;
+        /* Thin visible line */
+        padding-bottom: 10px;
+        /* Space below the line */
+    }
+
+    #certificate .content-wrapper {
+        display: flex;
+        justify-content: center;
+        /* Center content horizontally */
+        flex-wrap: wrap;
+        /* Allow content to wrap if needed */
+        margin-top: 20px;
+        /* Space above the line */
+    }
+
+    #certificate .content {
+        width: 100%;
+        /* Adjust width as per your design */
+        text-align: center;
+    }
+
+    #certificate .content p {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        background-color: #0f3d20;
+        color: white;
+    }
+
+    #content3 p:last-child {
+        background-color: #fff;
+        color: black;
+    }
+
+
+}
