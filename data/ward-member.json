@@ -1,0 +1,48 @@
+{
+    "familyName": "Bonet-Lafargue",
+    "arrivalDate": "somewhere around 2005",
+    "numberOfPeople": 8,
+    "visitedByBishopric": true,
+    "individuals": [
+        {
+            "name": "Jaime Bonet",
+            "gender": "male",
+            "birthdate": "01/04/1976"
+        },
+        {
+            "name": "Christine Lafargue-Bonet",
+            "gender": "female",
+            "birthdate": "16/09/1970"
+        },
+        {
+            "name": "Jean-Luc Odell",
+            "gender": "male",
+            "birthdate": "21/08/1991"
+        },
+        {
+            "name": "Cathelène Dechesne",
+            "gender": "female",
+            "birthdate": "06/05/1994"
+        },
+        {
+            "name": "Emeline Dechesne",
+            "gender": "female",
+            "birthdate": "22/09/1995"
+        },
+        {
+            "name": "Sébastien Dechesne",
+            "gender": "male",
+            "birthdate": "11/09/1998"
+        },
+        {
+            "name": "Benjamin Bonet",
+            "gender": "male",
+            "birthdate": "09/12/2003"
+        },
+        {
+            "name": "Evangéline Bonet-Lafargue",
+            "gender": "female",
+            "birthdate": "05/01/2010"
+        }
+    ]
+}
