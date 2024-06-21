@@ -36,6 +36,7 @@ function showContent(id) {
 function toggleMenu() {
     const nav = document.querySelector('header > nav');
     nav.classList.toggle('active');
+
     const menuToggle = document.querySelector('.menu-toggle');
     menuToggle.classList.toggle('active');
 }
