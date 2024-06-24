@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Adjust this according to your needs */
+    align-items: center;
+}
+
+header>div {
+    display: inline-block;
+    /* Ensures the logo div and nav are inline */
+}
+
+nav {
+    color: #090E20;
+    text-align: right;
+    /* Aligns navigation to the right */
+    padding: 60px;
+}
+
+#myButton {
+    display: none;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 0.75rem 2vw;
+    color: black;
+    text-decoration: none;
+}
+
+li.current-menu-item {
+    text-decoration: underline;
+}
+
+ul.menuLinks a:hover {
+    color: blue;
+}
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.menuLinks,
+ul.menuLinks.open {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*--- Card section starts here ---*/
+
+/* Center the main content */
+main div#view-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Grid view */
+#member-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* List view */
+#member-container.list {
+    display: block;
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.card .card-image {
+    float: left; /* Float the image to the left */
+    width: 30%; /* Adjust width as needed */
+    margin-right: 15px; /* Add some margin between image and text */
+}
+
+.card .card-image img {
+    width: 100%; /* Ensure image fills its container */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.card .card-details {
+    overflow: hidden; /* Clear floats within the card details */
+}
+
+.card .card-details h2 {
+    margin-top: 0; /* Remove margin from top of heading */
+}
+
+.card .card-details p {
+    clear: left; /* Clear float to ensure paragraphs start below image */
+    margin: 5px 0; /* Adjust margins for paragraphs */
+}
+
+/* Style for toggle buttons */
+#view-toggle {
+    margin-bottom: 20px;
+}
+
+#view-toggle button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;    
+}
+
+
+/* --- footer starts here ---*/
+
+footer {
+    width: 100%;
+    justify-self: center;
+    background: #E7F2F9;
+    color: #090E20;
+    margin-top: 1em;
+    padding: 2em;
+}
+
+#basic {
+    text-align: left;
+}

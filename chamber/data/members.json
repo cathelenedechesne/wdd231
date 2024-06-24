@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "La Cosmetique",
+            "address": "Shop DG09/148 Bunda St, Canberra ACT",
+            "phoneNumber": "0480306282",
+            "websiteUrl": "https://lacosmetique.com.au/",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqcNa0QfIILNuLbaqWYNZTTpbJSgl7-_T6Sg&s",
+            "membershipLevel": "gold",
+            "socialMedia": "https://www.instagram.com/lacosmetique.au/"
+        },
+        {
+            "name": "L'Occitane en Provence Canberra Centre",
+            "address": "148 Bunda Street, Canberra ACT",
+            "phoneNumber": "0262570660",
+            "websiteUrl": "https://au.loccitane.com/store?id=17OCST066",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUp3T5UgADz5zF2Ezs4PNgh7yjQAi62tNhjg&s",
+            "membershipLevel": "gold",
+            "socialMedia": "https://www.instagram.com/loccitaneanz/"
+        },
+        {
+            "name": "Belco Turkish Halal Kebabs & Pizzeria",
+            "address": "Shop 328A Lathlain St, Belconnen ACT",
+            "phoneNumber": "0262532928",
+            "websiteUrl": "https://order.kebabsinbelco.com.au/",
+            "image": "https://ucarecdn.com/dc6ac080-46b2-4219-92ef-c5ca67bd0cf8/-/resize/x50/-/progressive/yes/LOGO.png",
+            "membershipLevel": "silver",
+            "socialMedia": "https://www.instagram.com/belcokebabs/"
+        },
+        {
+            "name": "Goodberry's Creamery Belconnen",
+            "address": "4/25 Lathlain St, Belconnen ACT",
+            "phoneNumber": "0262511961",
+            "websiteUrl": "https://goodberrys.com.au/main-welcome.html",
+            "image": "https://media.licdn.com/dms/image/C4E0BAQFJFCy7LIeXZQ/company-logo_200_200/0/1630587685049/goodberrys_creamery_logo?e=2147483647&v=beta&t=ewyd7T-KwJYz7kMFGJ54IT51keCzaUYxjp9wG46hR6I",
+            "membershipLevel": "bronze",
+            "socialMedia": "https://www.instagram.com/goodberrys_canberra/"
+        },
+        {
+            "name": "1980 Chinese Restaurant",
+            "address": "2/25 Childers Street, Canberra ACT",
+            "phoneNumber": "0261621708",
+            "websiteUrl": "https://1980chineserestaurant.com.au/",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-2ynNkriK3zLzQP36IRYCgEwP99thAu8WA&s",
+            "membershipLevel": "bronze",
+            "socialMedia": "https://www.facebook.com/1980restaurant/"
+        },
+        {
+            "name": "My Mom's Yangpyeong Haejanggook in Canberra 양평해장국 캔버라 Korean restaurant Dickson",
+            "address": "3/28 Challis St, Dickson ACT 2602",
+            "phoneNumber": "0262497925",
+            "websiteUrl": null,
+            "image": "https://www.dkbpos.com/yangpyeong/img/favicon.png",
+            "membershipLevel": "silver",
+            "socialMedia": "https://www.instagram.com/yangpyeong_canberra/"
+        },
+        {
+            "name": "Machi Machi Australia",
+            "address": "shopEG01B/148 Bunda St, Canberra ACT 2601",
+            "phoneNumber": "0261937670",
+            "websiteUrl": "https://machimachi.com.au/",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgc9xWILGfwllFWVM6Tg67F57O5aweDng381W15rEPocmKuK9qHLRQ0uHyk2OcejfvS0&usqp=CAU",
+            "membershipLevel": "gold",
+            "socialMedia": "https://www.instagram.com/machimachi__australia/"
+        }
+    ]
+}

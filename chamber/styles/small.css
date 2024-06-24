@@ -1,0 +1,88 @@
+@media (max-width: 768px) {
+
+    .logo img {
+        display: block;
+        /* Ensure the image behaves as a block element */
+        margin: 0 auto;
+        /* Center the image horizontally */
+        max-width: 100%;
+        /* Ensure the logo image does not exceed its container */
+        height: auto;
+        /* Maintain aspect ratio of the logo */
+    }
+
+    #myButton {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #090E20;
+        cursor: pointer;
+        width: 44px;
+        text-align: right;
+        padding: .25rem 2vw;
+        position: absolute;
+        top: 0;
+        right: 2vw;
+    }
+
+    #myButton::before {
+        content: "\2630";
+    }
+
+    #myButton.open::before {
+        content: "\2613";
+    }
+
+    header nav ul.menuLinks {
+        overflow: hidden;
+        display: none;
+        /* Hide menu by default */
+
+    }
+
+    nav.open ul.menuLinks {
+        display: block;
+        /* Show menu when nav has class open */
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        text-align: center;
+        right: 2vw;
+        background-color: #E7F2F9;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        /* Ensure menu is above other content */
+    }
+
+    ul.menuLinks li a {
+        display: block;
+        padding: .75rem 2vw;
+        text-decoration: none;
+    }
+
+    li.current-menu-item {
+        color: white;
+        background-color: rgba(41, 64, 154, 0.5);
+        text-decoration: none;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(41, 64, 154, 0.5);
+        color: white;
+        text-decoration: white underline;
+    }
+
+    ul.menuLinks {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #member-container.grid,
+    #grid-view {
+        display: none;
+    }
+}
