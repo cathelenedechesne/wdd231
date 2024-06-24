@@ -121,21 +121,44 @@ main div#view-toggle {
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;    
+    cursor: pointer;
+    background-color: #E7F2F9; /* Set background color */
+    border: none; /* Remove border */
+    color: #090E20; /* Set text color */
+    border-radius: 8px;  
+}
+
+#view-toggle button:hover {
+    background-color: #C3D7E3; /* Darker shade of the background color on hover */
 }
 
 
 /* --- footer starts here ---*/
 
 footer {
-    width: 100%;
-    justify-self: center;
-    background: #E7F2F9;
+    background-color: #E7F2F9;
     color: #090E20;
-    margin-top: 1em;
-    padding: 2em;
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between; /* Ensure items are spaced evenly */
+    align-items: center; /* Center items vertically */
+}
+
+#chamber-address {
+    flex: 1; /* Allow the address section to grow as needed */
+    text-align: left; /* Left align text */
 }
 
 #basic {
-    text-align: left;
+    text-align: right; /* Right align text */
+    flex: 0 1 auto; /* Prevent basic section from growing */
+}
+
+footer h3 {
+    margin-bottom: 10px; /* Add some spacing below heading */
+}
+
+footer p {
+    margin: 5px 0; /* Adjust margins for paragraphs */
+    line-height: 1.5; /* Improve readability with adequate line height */
 }
