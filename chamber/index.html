@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canberra Chamber of Commerce's Home Page</title>
+    <meta name="description" content="Home Page for Canberra's Chamber of Commerce">
+    <meta name="author" content="Cathelène Dechesne">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Canberra Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/cathelenedechesne/wdd231/blob/main/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://cathelenedechesne.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/chamber-logo.webp" alt="Canberra Chamber of Commerce Logo">
+        </div>
+        <nav id="animateme" aria-label="Main Navigation">
+            <button id="myButton" aria-label="Menu Toggle"></button>
+            <ul class="menuLinks">
+                <li class="current-menu-item"><a href="#" title="Home Page">Home</a></li>
+                <li><a href="#" title="Directory Page">Directory</a></li>
+                <li><a href="#" title="Join Page">Join</a></li>
+                <li><a href="#" title="Discover Page">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title-page">
+            <h1>Home Page</h1>
+        </div>
+        <section id="hero">
+            <img src="images/hero-1.webp" alt="wooden firgures on blue background" width="1400" height="600" loading="lazy">            
+            <p>Photo by Ann H: https://www.pexels.com/photo/wooden-person-figures-on-blue-background-6589280/</p>
+            <button id="join">Become a Member</button>
+        </section>
+        <section id="event-weather">
+            <div id="events">
+                <h2>Events</h2>
+            </div>
+            <div id="current-weather">
+                <h2>Current Weather</h2>
+                <p id="current-temp"></p>
+                <img id="weather-icon" alt="Weather Icon">
+                <figcaption></figcaption>
+            </div>
+            <div id="forecast-container">
+                <h2>Weather Forecast</h2>
+                <div id="forecast">
+                </div>
+            </div>
+        </section>
+        <div id="member-container-home" class="grid">
+        </div>
+    </main>
+    <footer>
+        <div id="chamber-address">
+            <h3>Canberra Chamber of Commerce</h3>
+            <p>33 Kangoo St, <br> Canberra ACT, 1234, <br>Australia</p>
+            <p>info@canberracc.com.au</p>
+            <p>(02)12345678</p>
+        </div>
+        <div id="basic">
+            <p><span id="year"></span> WDD231 Class Project <br>Cathelène Dechesne<br>&copy; Canberra Chamber of
+                Commerce
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

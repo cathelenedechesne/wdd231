@@ -87,6 +87,14 @@ main div#view-toggle {
     display: block;
 }
 
+#member-container-home.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+
 /* Card styling */
 .card {
     border: 1px solid #ccc;
@@ -152,6 +160,158 @@ main div#view-toggle {
 #view-toggle button:hover {
     background-color: #C3D7E3;
     /* Darker shade of the background color on hover */
+}
+
+/* --- Hero Section --- */
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#hero p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #1b1b1b;
+}
+
+
+#join {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#join:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Event and Weather Section */
+#event-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Aligns items at the top */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    /* Adds space between the flex items */
+}
+
+/* Event section */
+#events {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#events h2{
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Current Weather Section */
+#current-weather {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #E7F2F9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather h2 {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#current-weather p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Forecast Container */
+#forecast-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#forecast-container h2 {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forecast-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.forecast-date {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.forecast-temp {
+    font-size: 1.2rem;
+    color: #333;
 }
 
 

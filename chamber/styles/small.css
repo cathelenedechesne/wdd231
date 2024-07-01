@@ -97,4 +97,49 @@
         margin: 10px 0;
         /* Adjust margins */
     }
+
+    /*--- Join button ---*/
+
+    #join {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    /* Event and Weather Section for small screens */
+    #event-weather {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #events,
+    #current-weather,
+    #forecast-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #events {
+        text-align: center;
+    }
+
+    #current-weather {
+        text-align: center;
+    }
+
+    #forecast-container {
+        text-align: center;
+    }
+
+    #forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-card {
+        width: 100px;
+        margin-bottom: 10px;
+    }
 }
