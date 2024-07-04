@@ -48,9 +48,6 @@
         <div class="card-container">
             <section class="card">
                 <h2>Course Work</h2>
-                <div class="card-content" id="course-work">
-                    <!-- Course content will be populated here by JavaScript -->
-                </div>
             </section>
             <section class="card">
                 <h2>Canberra, Australia</h2>
@@ -73,6 +70,10 @@
                     <button onclick="showContent('content2')">CSE</button>
                     <button onclick="showContent('content3')">WDD</button>
                 </div>
+                <!-- This is where the dialog will appear -->
+                <dialog id="course-details">
+                    <button id="closeModal">Close</button>
+                </dialog>
                 <div class="content-wrapper">
                     <div id="content1" class="content">
                         <p>Content for All</p>

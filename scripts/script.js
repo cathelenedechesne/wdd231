@@ -31,6 +31,48 @@ function showContent(id) {
     }
 }
 
+// --- Dialog Section ---
+
+// Get the dialog element
+const courseDetails = document.getElementById('course-details');
+
+// Function to display course details in the dialog/modal
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `        
+        <h2>${course.subject} ${course.number}: ${course.title}</h2>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        <button id="closeModal">Close</button>
+    `;
+    courseDetails.showModal(); // Use showModal() to open the dialog
+
+    // Add event listener to close modal button
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener('click', () => {
+        courseDetails.close(); // Use close() to close the dialog
+    });
+}
+
+// Function to set up course details click event
+function setupCourseDetailsClick() {
+    const courseElements = document.querySelectorAll('#certificate .content p');
+    courseElements.forEach(courseElement => {
+        courseElement.addEventListener('click', () => {
+            const courseId = courseElement.textContent.trim();
+            const course = courses.find(c => `${c.subject} ${c.number}` === courseId);
+            if (course) {
+                displayCourseDetails(course);
+            }
+        });
+    });
+}
+
+// Call the function to set up course details click events
+setupCourseDetailsClick();
+
+
 // --- Hamburger Menu ---
 
 function toggleMenu() {
@@ -122,24 +164,3 @@ const courses = [
         completed: false
     }
 ]
-
-// Populate Course Work Section
-const courseWorkSection = document.getElementById('course-work');
-let totalCredits = 0;
-courses.forEach(course => {
-    const courseElement = document.createElement('div');
-    courseElement.classList.add('course');
-    courseElement.innerHTML = `
-        <h3>${course.subject} ${course.number}: ${course.title}</h3>
-        <p>${course.description}</p>
-        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-        <p><strong>Credits:</strong> ${course.credits}</p>
-    `;
-    courseWorkSection.appendChild(courseElement);
-    totalCredits += course.credits;
-});
-
-// Display the total credits required
-const totalCreditsElement = document.createElement('p');
-totalCreditsElement.innerHTML = `<strong>Total Credits Required:</strong> ${totalCredits}`;
-courseWorkSection.appendChild(totalCreditsElement);
