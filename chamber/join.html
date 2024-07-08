@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canberra Chamber of Commerce's Home Page</title>
+    <meta name="description" content="Home Page for Canberra's Chamber of Commerce">
+    <meta name="author" content="Cathelène Dechesne">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Canberra Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/cathelenedechesne/wdd231/blob/main/chamber/images/chamber-logo.webp">
+    <meta property="og:url" content="https://cathelenedechesne.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/chamber-logo.webp" alt="Canberra Chamber of Commerce Logo">
+        </div>
+        <nav id="animateme" aria-label="Main Navigation">
+            <button id="myButton" aria-label="Menu Toggle"></button>
+            <ul class="menuLinks">
+                <li class="current-menu-item"><a href="https://cathelenedechesne.github.io/wdd231/chamber/index.html"
+                        title="Home Page">Home</a></li>
+                <li><a href="https://cathelenedechesne.github.io/wdd231/chamber/directory.html"
+                        title="Directory Page">Directory</a></li>
+                <li><a href="#" title="Join Page">Join</a></li>
+                <li><a href="#" title="Discover Page">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join Membership</h1>
+
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" pattern="[A-Za-z]+"
+                    title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" pattern="[A-Za-z]+"
+                    title="Your Last Name"></label>
+            <label>Organizational Title <input type="text" name="organizational" required
+                    autocomplete="organization-title" pattern="[A-Za-z]+" title="Your Organizational Title"></label>
+            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                    placeholder="987-555-1234"></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+            <label>Business/Organization Name<input type="text" name="organization-business-name" required
+                    autocomplete="organization" pattern="[A-Za-z]+" title="Your Business/Organization Name"></label>
+
+
+
+            <h3>Select Membership</h3>
+            <label><input type="radio" name="membership" value="non profit" checked> NP Membership</label>
+            <label><input type="radio" name="membership" value="bronze"> Bronze Memebership</label>
+            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+            <label><input type="radio" name="membership" value="gold"> Gold Memebership</label>
+
+            <h3>Business/Organization Description</h3>
+            <label><textarea id="description" name="description" rows="4" cols="50"></textarea>
+            </label>
+
+            <label><input type="hidden" id="timestamp" name="timestamp"></label>
+            <!-- Trigger button -->
+            <p><a id="learnMoreBtn" href="#">Learn more about membership levels</a></p>
+            <!-- Submit button -->
+            <input type="submit" value="Join Memebership">
+        </form>
+        <!-- The Modal -->
+        <div id="membershipModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Membership Levels</h2>
+                <div id="membershipDetails">
+                    <h3>Non-Profit Membership - FREE</h3>
+                    <p>Benefits: Special events, basic training, basic advertising, event discounts.</p>
+
+                    <h3>Bronze Membership - Fee: 8$</h3>
+                    <p>Benefits: Special events, intermediate training, better advertising, better event discounts.</p>
+
+                    <h3>Silver Membership - Fee: 12$</h3>
+                    <p>Benefits: Special events, advanced training, spotlight advertising, significant event discounts.
+                    </p>
+
+                    <h3>Gold Membership - Fee: 18$</h3>
+                    <p>Benefits: Special events, premium training, premium advertising, highest event discounts.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="chamber-address">
+            <h3>Canberra Chamber of Commerce</h3>
+            <p>33 Kangoo St, <br> Canberra ACT, 1234, <br>Australia</p>
+            <p>info@canberracc.com.au</p>
+            <p>(02)12345678</p>
+        </div>
+        <div id="basic">
+            <p><span id="year"></span> WDD231 Class Project <br>Cathelène Dechesne<br>&copy; Canberra Chamber of
+                Commerce
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
