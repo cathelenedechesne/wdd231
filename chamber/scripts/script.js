@@ -133,6 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
         listViewBtn.addEventListener('click', () => toggleView('list'));
     }
 
+    document.getElementById('join').addEventListener('click', function () {
+        window.location.href = 'https://cathelenedechesne.github.io/wdd231/chamber/join.html';
+    });
+
     // --- Weather section ---
 
     const urlCurrent = "https://api.openweathermap.org/data/2.5/weather?lat=-35.280192266512806&lon=149.13108649601466&units=metric&appid=70e30a19e9ac5a9a016e519299c1e279";
