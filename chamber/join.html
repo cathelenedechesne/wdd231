@@ -49,28 +49,40 @@
                     title="Your First Name"></label>
             <label>Last Name <input type="text" name="last" required autocomplete="family-name" pattern="[A-Za-z]+"
                     title="Your Last Name"></label>
-            <label>Organizational Title <input type="text" name="organizational" required
-                    autocomplete="organization-title" pattern="[A-Za-z]+" title="Your Organizational Title"></label>
+            <label>Organizational Title
+                <input type="text" name="organizational" required autocomplete="organization-title"
+                    pattern="[A-Za-z\- ]{7,}"
+                    title="Your Organizational Title must be at least 7 characters long and can only contain letters, hyphens, and spaces">
+            </label>
             <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
                     placeholder="987-555-1234"></label>
             <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
                     autocomplete="email"></label>
             <label>Business/Organization Name<input type="text" name="organization-business-name" required
-                    autocomplete="organization" pattern="[A-Za-z]+" title="Your Business/Organization Name"></label>
+                    autocomplete="organization" pattern="[A-Za-z ]+" title="Your Business/Organization Name"></label>
 
 
 
             <h3>Select Membership</h3>
-            <label><input type="radio" name="membership" value="non profit" checked> NP Membership</label>
-            <label><input type="radio" name="membership" value="bronze"> Bronze Memebership</label>
-            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
-            <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            <div class="membership-options">
+                <label class="membership-card"><input type="radio" name="membership" value="non profit"> NP
+                    Membership</label>
+                <label class="membership-card"><input type="radio" name="membership" value="bronze"> Bronze
+                    Membership</label>
+                <label class="membership-card"><input type="radio" name="membership" value="silver"> Silver
+                    Membership</label>
+                <label class="membership-card"><input type="radio" name="membership" value="gold"> Gold
+                    Membership</label>
+            </div>
+
 
             <h3>Business/Organization Description</h3>
             <label><textarea id="description" name="description" rows="4" cols="50"></textarea>
             </label>
 
-            <label><input type="hidden" id="timestamp" name="timestamp"></label>
+            <label>
+                <input type="hidden" id="timestamp" name="timestamp">
+            </label>
             <!-- Trigger button -->
             <p><a id="learnMoreBtn" href="#">Learn more about membership levels</a></p>
             <!-- Submit button -->

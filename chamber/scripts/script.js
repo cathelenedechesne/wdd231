@@ -209,7 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-//join.html
+//--- join.html ---
+
 document.addEventListener('DOMContentLoaded', (event) => {
     // Set the timestamp field
     let timestampField = document.getElementById('timestamp');
