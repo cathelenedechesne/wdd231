@@ -137,75 +137,76 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'https://cathelenedechesne.github.io/wdd231/chamber/join.html';
     });
 
-    // --- Weather section ---
+// Weather section
 
-    const urlCurrent = "https://api.openweathermap.org/data/2.5/weather?lat=-35.280192266512806&lon=149.13108649601466&units=metric&appid=70e30a19e9ac5a9a016e519299c1e279";
-    const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=-35.280192266512806&lon=149.13108649601466&units=metric&appid=70e30a19e9ac5a9a016e519299c1e279";
+const urlCurrent = "https://api.openweathermap.org/data/2.5/weather?lat=-35.280192266512806&lon=149.13108649601466&units=metric&appid=70e30a19e9ac5a9a016e519299c1e279";
+const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=-35.280192266512806&lon=149.13108649601466&units=metric&appid=70e30a19e9ac5a9a016e519299c1e279";
 
-    async function fetchWeatherData(url, displayFunction) {
-        try {
-            const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.json();
-                displayFunction(data);
-            } else {
-                throw Error(await response.text());
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    function displayCurrentWeather(data) {
-        const currentTemp = document.querySelector('#current-temp');
-        const weatherIcon = document.querySelector('#weather-icon');
-        const captionDesc = document.querySelector('figcaption');
-
-        // Format temperature to zero decimal points
-        const formattedTemp = data.main.temp.toFixed(0);
-
-        if (currentTemp && weatherIcon && captionDesc) {
-            currentTemp.innerHTML = `${formattedTemp}&deg;C`;
-            const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-            let desc = data.weather[0].description;
-            weatherIcon.setAttribute('src', iconsrc);
-            weatherIcon.setAttribute('alt', desc);
-            captionDesc.textContent = `${desc}`;
+async function fetchWeatherData(url, displayFunction) {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayFunction(data);
         } else {
-            console.error('Error: Weather elements not found.');
+            throw Error(await response.text());
         }
+    } catch (error) {
+        console.log(error);
     }
+}
 
-    function displayForecast(data) {
-        const forecastContainer = document.getElementById('forecast');
+function displayCurrentWeather(data) {
+    const currentTemp = document.querySelector('#current-temp');
+    const weatherIcon = document.querySelector('#weather-icon');
+    const captionDesc = document.querySelector('#weather-caption');
 
-        // Clear existing content
-        forecastContainer.innerHTML = '';
+    // Format temperature to zero decimal points
+    const formattedTemp = data.main.temp.toFixed(0);
 
-        // Display forecast for next 5 days
-        const forecasts = data.list.filter((item, index) => index % 8 === 0); // Select every 8th item for daily forecast
-
-        forecasts.forEach(forecast => {
-            const date = new Date(forecast.dt * 1000); // Convert timestamp to Date object
-            const day = date.toLocaleDateString('en-US', { weekday: 'short' });
-            const temp = forecast.main.temp.toFixed(0); // Format temperature to zero decimal points
-            const icon = forecast.weather[0].icon;
-
-            const forecastCard = document.createElement('div');
-            forecastCard.classList.add('forecast-card');
-            forecastCard.innerHTML = `
-                <p class="forecast-date">${day}</p>
-                <img src="https://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon">
-                <p class="forecast-temp">${temp}&deg;C</p>
-            `;
-
-            forecastContainer.appendChild(forecastCard);
-        });
+    if (currentTemp && weatherIcon && captionDesc) {
+        currentTemp.innerHTML = `${formattedTemp}&deg;C`;
+        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+        let desc = data.weather[0].description;
+        weatherIcon.setAttribute('src', iconsrc);
+        weatherIcon.setAttribute('alt', desc);
+        captionDesc.textContent = `${desc}`;
+    } else {
+        console.error('Error: Weather elements not found.');
     }
+}
 
+function displayForecast(data) {
+    const forecastContainer = document.getElementById('forecast');
 
-    fetchWeatherData(urlCurrent, displayCurrentWeather);
-    fetchWeatherData(urlForecast, displayForecast);
+    // Clear existing content
+    forecastContainer.innerHTML = '';
+
+    // Display forecast for next 5 days
+    const forecasts = data.list.filter((item, index) => index % 8 === 0); // Select every 8th item for daily forecast
+
+    forecasts.forEach(forecast => {
+        const date = new Date(forecast.dt * 1000); // Convert timestamp to Date object
+        const day = date.toLocaleDateString('en-US', { weekday: 'short' });
+        const temp = forecast.main.temp.toFixed(0); // Format temperature to zero decimal points
+        const icon = forecast.weather[0].icon;
+
+        const forecastCard = document.createElement('div');
+        forecastCard.classList.add('forecast-card');
+        forecastCard.innerHTML = `
+            <p class="forecast-date">${day}</p>
+            <img src="https://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon">
+            <p class="forecast-temp">${temp}&deg;C</p>
+        `;
+
+        forecastContainer.appendChild(forecastCard);
+    });
+}
+
+// Fetch weather data and display
+fetchWeatherData(urlCurrent, displayCurrentWeather);
+fetchWeatherData(urlForecast, displayForecast);
+
 
 });
 
