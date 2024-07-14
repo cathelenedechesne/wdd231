@@ -242,4 +242,26 @@
     .thankyou-container li {
         font-size: 1em;
     }
+
+    /* --- Discover Section --- */
+
+    main.container {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        grid-column: span 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
