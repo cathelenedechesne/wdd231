@@ -1,0 +1,116 @@
+/* styles/siteplan.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background: #5d1d3a;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+main {
+    padding: 20px;
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+/* Table Styles */
+table.colors {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.colors th,
+table.colors td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table.colors .primary {
+    background-color: #fff5f9;
+}
+
+table.colors .secondary {
+    background-color: #5d1d3a;
+    color: #fff5f9;
+}
+
+table.colors .accent1 {
+    background-color: #fff;
+}
+
+/* Paragraph Styles */
+p.colored {
+    color: #5d1d3a;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #5d1d3a;
+    background-color: #fff5f9;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #5d1d3a;
+    margin: 0 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #5d1d3a;
+    color: white;
+}
+
+/* Site Map Styles */
+.sitemap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sitemap div {
+    border: 1px solid #5d1d3a;
+    padding: 10px;
+}
+
+.top,
+.left,
+.right {
+    visibility: hidden;
+}
+
+/* Footer Styles */
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    font-size: 0.8em;
+    color: #ddd;
+}
