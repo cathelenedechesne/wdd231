@@ -611,6 +611,7 @@ main h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 0.35fr));
+    /*adjusting the white space at the buttom*/
     gap: 1em;
 }
 
