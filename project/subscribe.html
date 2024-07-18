@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frankston Beach's Home Page</title>
+    <title>Frankston Beach's Subscribe Page</title>
     <meta name="description" content="Subscribe Page for Frankston Beach">
     <meta name="author" content="Cathelène Dechesne">
     <link rel="icon" href="/project/images/favicon.ico">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/small.css">
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js" type="module" defer></script>
 </head>
 
 <body>
@@ -32,8 +32,11 @@
             <ul class="menuLinks">
                 <li><a href="https://cathelenedechesne.github.io/wdd231/project/index.html" title="Home Page">Home</a>
                 </li>
-                <li><a href="#" title="About Frankston Beach Page">About Frankston Beach</a></li>
-                <li class="current-menu-item"><a href="https://cathelenedechesne.github.io/wdd231/project/subscribe.html" title="Subscribe Page">Join</a>
+                <li><a href="https://cathelenedechesne.github.io/wdd231/project/about.html"
+                        title="About Frankston Beach Page">About Frankston Beach</a></li>
+                <li class="current-menu-item"><a
+                        href="https://cathelenedechesne.github.io/wdd231/project/subscribe.html"
+                        title="Subscribe Page">Join</a>
                 </li>
             </ul>
         </nav>
@@ -50,9 +53,7 @@
                     placeholder="987-555-1234"></label>
             <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
                     autocomplete="email"></label>
-            <label>
-                <input type="hidden" id="timestamp" name="timestamp">
-            </label>
+            <input type="hidden" id="timestamp" name="timestamp">
             <!-- Submit button -->
             <input type="submit" value="Join Membership">
         </form>
