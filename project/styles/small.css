@@ -1,5 +1,10 @@
 @media (max-width: 768px) {
 
+    body {
+        font-size: 14px;
+        /* Adjust base font size for smaller screens */
+    }
+
     .logo img {
         display: block;
         /* Ensure the image behaves as a block element */
@@ -96,33 +101,62 @@
     }
 
     /* Event and Weather Section for small screens */
-    #event-weather {
-        flex-direction: column;
+    #newsletter-weather {
+        flex-direction: column; /* Stack newsletter and weather sections vertically */
         align-items: center;
+        margin: 20px 0;
     }
 
-   
-    #current-weather
-    {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #events {
-        text-align: center;
-    }
-
+    #newsletter,
     #current-weather {
-        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #newsletter h2,
+    #current-weather h2 {
+        font-size: 1.2rem;
+    }
+
+    #map {
+        padding: 20px;
+    }
+
+    #map h2 {
+        font-size: 1.5rem;
+    }
+
+    #direction,
+    #map-container-home {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    #direction h2,
+    #map-container-home h2 {
+        font-size: 1.2rem;
+    }
+
+    #facilities-activities {
+        flex-direction: column;
+        border: none; /* Remove border on small screens */
+    }
+
+    .facilities-section,
+    .activities-section {
+        margin: 0;
+        padding: 20px;
     }
 
     #food-card .card-content,
     #hotel-card .card-content {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
+        flex-direction: column;
+        /* Stack cards vertically on smaller screens */
     }
-    
+
     .card {
-        flex: 1 1 100%; /* Cards take full width on small screens */
+        flex: 1 1 100%;
+        /* Cards take full width on small screens */
     }
 
 
@@ -143,8 +177,10 @@
     }
 
     form {
-        margin: 1rem 2%;
+        margin: 1rem 5%;
+        padding-left: 0;
     }
+
 
     label {
         display: block;
@@ -193,7 +229,7 @@
     input[type=submit] {
         border: none;
         text-align: center;
-        background-color: #3D405B;
+        background-color: #5d1d3a;
         color: white;
         border-radius: 1rem;
         padding: .75rem 1.5rem;
@@ -227,25 +263,4 @@
         font-size: 1em;
     }
 
-    /* --- Discover Section --- */
-
-    main.container {
-        grid-template-columns: 1fr;
-    }
-
-    main h1 {
-        grid-column: span 1;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5em 0;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
 }
