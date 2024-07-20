@@ -114,9 +114,9 @@
         align-items: center;
     }
 
-    #events,
-    #current-weather,
-    #forecast-container {
+   
+    #current-weather
+    {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -129,19 +129,16 @@
         text-align: center;
     }
 
-    #forecast-container {
-        text-align: center;
+    #food-card .card-content,
+    #hotel-card .card-content {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+    
+    .card {
+        flex: 1 1 100%; /* Cards take full width on small screens */
     }
 
-    #forecast {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .forecast-card {
-        width: 100px;
-        margin-bottom: 10px;
-    }
 
     /* --- Join Membership --- */
 

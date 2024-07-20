@@ -41,8 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const contentDiv = document.createElement('div');
         contentDiv.classList.add('card-content');
 
-        if (restaurants && restaurants.length) {
-            restaurants.forEach((restaurant, index) => {
+        const visibleItems = restaurants.slice(0, 3);
+        const remainingItems = restaurants.slice(3);
+
+        if (visibleItems.length) {
+            visibleItems.forEach(restaurant => {
                 const card = document.createElement('div');
                 card.classList.add('item', 'card');
                 card.innerHTML = `
@@ -60,6 +63,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             restaurantCard.appendChild(contentDiv);
+
+            if (remainingItems.length) {
+                const showMoreBtn = document.createElement('button');
+                showMoreBtn.classList.add('show-more');
+                showMoreBtn.textContent = 'Show More';
+                showMoreBtn.addEventListener('click', () => {
+                    openModal(remainingItems, 'Restaurants');
+                });
+                restaurantCard.appendChild(showMoreBtn);
+            }
         } else {
             restaurantCard.innerHTML += '<p>No restaurants found.</p>';
         }
@@ -72,8 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const contentDiv = document.createElement('div');
         contentDiv.classList.add('card-content');
 
-        if (hotels && hotels.length) {
-            hotels.forEach((hotel, index) => {
+        const visibleItems = hotels.slice(0, 3);
+        const remainingItems = hotels.slice(3);
+
+        if (visibleItems.length) {
+            visibleItems.forEach(hotel => {
                 const card = document.createElement('div');
                 card.classList.add('item', 'card');
                 card.innerHTML = `
@@ -92,10 +108,66 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             hotelCard.appendChild(contentDiv);
+
+            if (remainingItems.length) {
+                const showMoreBtn = document.createElement('button');
+                showMoreBtn.classList.add('show-more');
+                showMoreBtn.textContent = 'Show More';
+                showMoreBtn.addEventListener('click', () => {
+                    openModal(remainingItems, 'Hotels');
+                });
+                hotelCard.appendChild(showMoreBtn);
+            }
         } else {
             hotelCard.innerHTML += '<p>No hotels found.</p>';
         }
     }
 
-    fetchData();    
+    function openModal(items, type) {
+        // Create modal HTML
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>${type}</h2>
+                <div class="card-content">
+                    ${items.map(item => `
+                        <div class="item card">
+                            <div class="card-image">
+                                <img src="${item.image}" alt="${item.name}">
+                            </div>
+                            <div class="card-details">
+                                <h2>${item.name}</h2>
+                                <p>${item.description}</p>
+                                <a href="${type === 'Restaurants' ? item.menu : item.website}" target="_blank">${type === 'Restaurants' ? 'View Menu' : 'Website'}</a>
+                                <p>${item.location}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Show the modal
+        modal.style.display = 'block';
+
+        // Close the modal when the user clicks on <span> (x)
+        const closeButton = modal.querySelector('.close');
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.removeChild(modal);
+        });
+
+        // Optional: Close modal when clicking outside of the modal content
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.removeChild(modal);
+            }
+        });
+    }
+
+    fetchData();
 });
