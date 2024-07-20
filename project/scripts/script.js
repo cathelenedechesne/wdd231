@@ -1,5 +1,3 @@
-// Combined script.js and subscribe.js
-
 import { fetchWeatherData, displayCurrentWeather, weatherUrl } from './weather.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -48,22 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleError(error) {
         console.error("Geolocation error:", error);
         alert("Unable to retrieve your location.");
-    }
-
-    // Add timestamp to form submission
-    const subscribeForm = document.querySelector('form');
-    if (subscribeForm) {
-        subscribeForm.addEventListener('submit', (event) => {
-            const timestampField = document.getElementById('timestamp');
-            timestampField.value = new Date().toISOString();
-        });
-    }
-
-    // Display form data on thankyou.html
-    const urlParams = new URLSearchParams(window.location.search);
-    document.getElementById('first-name').textContent = urlParams.get('first') || 'N/A';
-    document.getElementById('last-name').textContent = urlParams.get('last') || 'N/A';
-    document.getElementById('email').textContent = urlParams.get('email') || 'N/A';
-    document.getElementById('phone').textContent = urlParams.get('phone') || 'N/A';
-    document.getElementById('timestamp').textContent = urlParams.get('timestamp') || 'N/A';
+    }    
 });
+
