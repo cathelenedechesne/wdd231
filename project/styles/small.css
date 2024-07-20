@@ -81,21 +81,8 @@
         margin: 0;
     }
 
-    #member-container.grid,
-    #grid-view {
-        display: none;
-    }
-
     footer {
         flex-direction: column;
-    }
-
-    #chamber-address,
-    #basic {
-        text-align: center;
-        /* Center align on smaller screens */
-        margin: 10px 0;
-        /* Adjust margins */
     }
 
     /*--- Join button ---*/

@@ -103,7 +103,7 @@ ul.menuLinks.open {
 
 /*--- Weather section---*/
 
-/* Event and Weather Section */
+/* NEwsletter and Weather Section */
 #newsletter-weather {
     display: flex;
     justify-content: space-between;
@@ -118,7 +118,7 @@ ul.menuLinks.open {
     /* Adds space between the flex items */
 }
 
-/* Event section */
+/* Newsletter section */
 #newsletter {
     flex: 1;
     padding: 10px;
@@ -265,8 +265,7 @@ section {
 
 #basic-info h1 {
     font-family: 'Libre Baskerville', serif;
-    margin-bottom: 20px;
-    font-size: 2rem;
+    margin-bottom: 20px;    
 }
 
 #basic-info img {
@@ -284,7 +283,7 @@ section {
 
 #basic-info em {
     font-style: italic;
-    color: #999;
+    color: #1b1b1b;
 }
 
 h2 {
@@ -473,6 +472,143 @@ h2 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/*--- subscribe ---*/
+
+/* Form Styles */
+
+h1 {
+    color: #1b1b1b;
+    text-align: center;
+    /* Center the title text */
+    font-family: 'Playfair Display', serif;
+}
+
+form {
+    margin: 2rem 10%;
+    padding-left: 20%;
+    /* Increased margin for larger screens */
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    /* Increased font size for better readability on larger screens */
+    color: purple;
+    padding-top: .2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    /* Increased font size */
+    color: #7a4030;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select {
+    display: block;
+    margin: .5rem 0 1.5rem 0;
+    /* Adjusted margin for better spacing */
+    padding: .5rem;
+    /* Increased padding for larger inputs */
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1.2rem;
+    /* Increased font size */
+    color: #3D405B;
+    width: 100%;
+    /* Full width for better layout on larger screens */
+    max-width: 600px;
+    /* Maximum width to prevent overly large inputs */
+}
+
+input:required {
+    border-left-color: #d70000;
+}
+
+input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+input:required:valid {
+    border-left-color: green;
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #5d1d3a;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    /* Increased padding for larger buttons */
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    /* Increased font size */
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    /* Added cursor pointer for better UX */
+}
+
+input[type=submit]:hover {
+    background-color: #555;
+    /* Hover effect for better interactivity */
+}
+
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+.thankyou-container {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.thankyou-container h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.thankyou-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.thankyou-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.thankyou-container li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.thankyou-container li span {
+    font-weight: bold;
+    color: #023770;
+    /* Example primary color */
 }
 
 
