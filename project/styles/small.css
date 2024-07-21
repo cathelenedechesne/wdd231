@@ -70,7 +70,8 @@
     /* Style for the current menu item */
     li.current-menu-item a {
         color: white;
-        background-color: rgba(93, 29, 58, 1.5); /* Updated color */
+        background-color: rgba(93, 29, 58, 1.5);
+        /* Updated color */
         text-decoration: none;
         display: block;
         /* Ensure the background color covers the entire list item */
@@ -80,7 +81,8 @@
 
     /* Style for menu links on hover */
     ul.menuLinks a:hover {
-        background-color: rgba(93, 29, 58, 1.5); /* Updated color */
+        background-color: rgba(93, 29, 58, 1.5);
+        /* Updated color */
         color: white;
         text-decoration: underline;
         /* Apply underline text decoration */
@@ -103,11 +105,25 @@
     /*--- Join button ---*/
 
     #join {
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        padding: 10px 15px;
+        display: block;
+        margin: 20px auto;
+        /* Center the button horizontally with margin */
+        padding: 10px 20px;
+        /* Adjust padding for better touch target */
         font-size: 14px;
+        /* Adjust font size for smaller screens */
+        background-color: #5d1d3a;
+        /* Button background color */
+        color: white;
+        /* Button text color */
+        border: none;
+        /* Remove border */
+        border-radius: 4px;
+        /* Rounded corners */
+        cursor: pointer;
+        /* Pointer cursor for click */
+        transition: background-color 0.3s;
+        /* Smooth background color transition */
     }
 
     /* Event and Weather Section for small screens */
