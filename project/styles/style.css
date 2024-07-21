@@ -596,7 +596,6 @@ input:-webkit-autofill {
 }
 
 .thankyou-container p {
-    font-size: 1.2em;
     color: #555;
     margin-bottom: 20px;
 }
@@ -607,7 +606,6 @@ input:-webkit-autofill {
 }
 
 .thankyou-container li {
-    font-size: 1.1em;
     color: #333;
     margin-bottom: 10px;
 }
