@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    document.getElementById('join').addEventListener('click', function () {
+        window.location.href = 'https://cathelenedechesne.github.io/wdd231/project/subscribe.html';
+    });
+
     // Fetch weather data and display
     fetchWeatherData(weatherUrl, displayCurrentWeather);
 
@@ -46,6 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleError(error) {
         console.error("Geolocation error:", error);
         alert("Unable to retrieve your location.");
-    }    
+    }
 });
 
