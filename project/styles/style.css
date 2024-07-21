@@ -631,3 +631,14 @@ footer p {
     margin: 5px 0;
     color: #fff5f9;
 }
+
+/* Attribution Link Styling */
+footer a {
+    color: #ffd2ef; /* Bootstrap primary color or any shade of blue */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #b695ab; /* Darker shade of blue on hover */
+}
