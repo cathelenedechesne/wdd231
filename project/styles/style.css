@@ -37,8 +37,16 @@ nav a {
     transition: background 0.3s, color 0.3s;
 }
 
+li.current-menu-item a {
+    color: white;
+    background-color: rgba(93, 29, 58, 1.5);
+    /* Updated color */
+    text-decoration: none;
+
+}
+
 nav a:hover {
-    background: #5d1d3a;
+    background: #3b1325;
     color: white;
 }
 
@@ -265,7 +273,7 @@ section {
 
 #basic-info h1 {
     font-family: 'Libre Baskerville', serif;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
 #basic-info img {

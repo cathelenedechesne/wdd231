@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/small.css">
-    <script src="scripts/subscribe.js" type="module" defer></script>
+    <script src="scripts/subscribe.js"></script>
 </head>
 
 <body>
@@ -53,7 +53,9 @@
                     placeholder="987-555-1234"></label>
             <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
                     autocomplete="email"></label>
-            <input type="hidden" id="timestamp" name="timestamp">
+            <label>
+                <input type="hidden" id="timestamp" name="timestamp">
+            </label>
             <!-- Submit button -->
             <input type="submit" value="Subscribe to Newsletter">
         </form>

@@ -19,15 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Add timestamp to form submission
-    const form = document.querySelector('form');
-    const timestampInput = document.getElementById('timestamp');
-
-    if (form && timestampInput) {
-        form.addEventListener('submit', (event) => {
-            const currentTimestamp = new Date().toISOString();
-            timestampInput.value = currentTimestamp;
-        });
+    const timestampField = document.getElementById('timestamp');
+    if (timestampField) {
+        const currentDateTime = new Date().toISOString();
+        timestampField.value = currentDateTime;
+        // Store timestamp in localStorage (if needed)
+        localStorage.setItem('timestamp', currentDateTime);
     }
+
 
     // Display form data on thankyou.html
     if (window.location.pathname.includes('thankyou.html')) {

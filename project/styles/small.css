@@ -54,7 +54,6 @@
         width: 100%;
         text-align: center;
         right: 2vw;
-        background-color: #E7F2F9;
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,16 +67,27 @@
         text-decoration: none;
     }
 
-    li.current-menu-item {
+    /* Style for the current menu item */
+    li.current-menu-item a {
         color: white;
-        background-color: rgba(41, 64, 154, 0.5);
+        background-color: rgba(93, 29, 58, 1.5); /* Updated color */
         text-decoration: none;
+        display: block;
+        /* Ensure the background color covers the entire list item */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
     }
 
+    /* Style for menu links on hover */
     ul.menuLinks a:hover {
-        background-color: rgba(41, 64, 154, 0.5);
+        background-color: rgba(93, 29, 58, 1.5); /* Updated color */
         color: white;
-        text-decoration: white underline;
+        text-decoration: underline;
+        /* Apply underline text decoration */
+        display: block;
+        /* Ensure the background color covers the entire list item */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
     }
 
     ul.menuLinks {
@@ -102,7 +112,8 @@
 
     /* Event and Weather Section for small screens */
     #newsletter-weather {
-        flex-direction: column; /* Stack newsletter and weather sections vertically */
+        flex-direction: column;
+        /* Stack newsletter and weather sections vertically */
         align-items: center;
         margin: 20px 0;
     }
@@ -137,9 +148,21 @@
         font-size: 1.2rem;
     }
 
+    #map-cards {
+        flex-direction: column;
+        /* Stack map cards vertically */
+    }
+
+    #map-container-home img {
+        width: 100%;
+        height: auto;
+    }
+
+
     #facilities-activities {
         flex-direction: column;
-        border: none; /* Remove border on small screens */
+        border: none;
+        /* Remove border on small screens */
     }
 
     .facilities-section,
