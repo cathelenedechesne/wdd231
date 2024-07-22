@@ -361,6 +361,24 @@ h2 {
     overflow: hidden;
 }
 
+.show-more {
+    background-color: #5d1d3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 0 auto;
+    /* Center the button horizontally */
+}
+
+.show-more:hover {
+    background-color: #43122a;
+}
+
+
 /* Card styling */
 
 #food-card .card-content,
