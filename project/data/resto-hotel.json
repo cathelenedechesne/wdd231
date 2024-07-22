@@ -3,7 +3,7 @@
         {
             "name": "Waves on the Beach Restaurant",
             "description": "Italian. Vegetarian Friendly, Vegan Options",
-            "image": "https://www.wavesonthebeach.com.au/wp-content/uploads/2014/04/Waves-Logo@2x.png",
+            "image": "images/waves.webp",
             "location": "2/1N Long Island Drive, Frankston, Victoria 3199 Australia",
             "menu": "https://www.wavesonthebeach.com.au/menu/"
         },
@@ -17,21 +17,21 @@
         {
             "name": "Geonbae",
             "description": "Korean, Vegetarian Friendly, Vegan Options",
-            "image": "https://www.morningtonpeninsulamagazine.com.au/wp-content/uploads/2021/05/GeonbaeFrankstonWebLogo.jpg",
+            "image": "images/geonbae-frankston.webp",
             "location": "4 Kananook Creek Blvd, Frankston VIC 3199",
             "menu": "https://www.geonbae.au/frankston"
         },
         {
             "name": "Frankston Waterfront Restaurant",
             "description": "Seafood, Vegetarian Friendly, Vegan Options",
-            "image": "https://i0.wp.com/frankstonwaterfront.com.au/wp-content/uploads/2021/09/8248d-logo-removebg-preview-1.jpg?resize=656%2C380&ssl=1",
+            "image": "images/waterfront.webp",
             "location": "2 Kananook Creek Bvd South East Water Building Ground Floor, Frankston, Victoria 3199 Australia",
             "menu": "https://frankstonwaterfront.com.au/"
         },
         {
             "name": "La Porchetta",
             "description": "Italian, Pizza, Vegetarian Friendly",
-            "image": "https://laporchetta.com.au/wp-content/uploads/2021/04/laporchetta-logo.png",
+            "image": "images/laporchetta-logo.webp",
             "location": "436 Nepean Hwy, Frankston VIC 3199",
             "menu": "https://laporchetta.com.au/Frankston/"
         },
@@ -45,7 +45,7 @@
         {
             "name": "Seagulls Greek Taverna",
             "description": "Greek, Vegetarian Friendly",
-            "image": "https://seagullsgreektaverna.com.au/wp-content/uploads/2017/05/logo-seagull.png",
+            "image": "images/logo-seagull.webp",
             "location": "491 Nepean Hwy, Frankston VIC 3199",
             "menu": "https://seagullsgreektaverna.com.au/main-menu/"
         },
@@ -61,7 +61,7 @@
         {
             "name": "Frankston International Motel",
             "description": "Comfortable accommodation in the heart of Frankston.",
-            "image": "https://best-western-international-motel.hotelsinvictoria.net/data/Pics/OriginalPhoto/7411/741160/741160408/best-western-international-motel-frankston-pic-15.JPEG",
+            "image": "images/best-western-international-motel-frankston.webp",
             "location": "389 Nepean Hwy, Frankston VIC 3199",
             "website": "https://www.frankstoninternational.com.au/",
             "rating": 4.3
@@ -69,7 +69,7 @@
         {
             "name": "Quest Frankston on the Bay",
             "description": "Modern apartments with bay views.",
-            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/150757313.jpg?k=bf37914ea97932684bf0b9049aae55f9ddeb315530c3240ddbb01a75dcfed29e&o=&hp=1",
+            "image": "images/quest.webp",
             "location": "435 Nepean Hwy, Frankston VIC 3199",
             "website": "https://www.questapartments.com.au/properties/vic/frankston/quest-frankston-on-the-bay/overview",
             "rating": 4.5
@@ -77,7 +77,7 @@
         {
             "name": "Horizon Bliss",
             "description": "Non-smoking property set 500 metres from the beach.",
-            "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/577050285.jpg?k=05ff21f92ec99909f4561d5e7892bed23062019739951be943747f43f95ab5e1&o=&hp=1",
+            "image": "images/horizon-bliss.webp",
             "location": "207/1 Plowman Place, Frankston VIC 3199",
             "website": "https://www.booking.com/hotel/au/horizon-bliss.en-gb.html",
             "rating": 5
@@ -85,7 +85,7 @@
         {
             "name": "By The Beach Frankston",
             "description": "The spacious two-bedroom apartment only 500 metres from the beach.",
-            "image": "https://cf.bstatic.com/xdata/images/hotel/square600/184394304.webp?k=9e57e8a34bd8700aba246b1bfb7576c86b726305b15d8592bec9c39530d2a4ee&o=",
+            "image": "images/by-the-beach.webp",
             "location": "Unit 5 8 High Street, Frankston VIC 3199",
             "website": "https://www.booking.com/hotel/au/by-the-beach-frankston.en-gb.html",
             "rating": 5.0
@@ -93,7 +93,7 @@
         {
             "name": "Stella's Dromana Hotel",
             "description": "Where luxury meets relaxation.",
-            "image": "https://lh5.googleusercontent.com/p/AF1QipOpSJrlzhM0SjO99Nv4-k0Vfg-s3VN6MYb3LMuy=w252-h189-k-no",
+            "image": "images/stella-dromana.webp",
             "location": "151 Point Nepean Rd, Dromana VIC 3936 ",
             "website": "https://stellasdromanahotel.com/",
             "rating": 4.0
@@ -101,7 +101,7 @@
         {
             "name": "Nightcap at The Cheeky Squire",
             "description": "Boasting charismatic charm and all-round great value for your next holiday",
-            "image": "https://lh3.googleusercontent.com/p/AF1QipNlE-FOFwy3lAn_oc1qKgowHczSveiQj9sFi256=w287-h192-n-k-no-v1-rj",
+            "image": "images/nightcap.webp",
             "location": "510 Nepean Hwy, Frankston VIC 3199",
             "website": "https://nightcaphotels.com.au/hotels/vic/the-cheeky-squire",
             "rating": 4.3
@@ -109,7 +109,7 @@
         {
             "name": "Award Winning Beach Front Retreat",
             "description": "Direct beach access, stunning sea views, an outdoor spa, fully equipped kitchen, pet-friendly accommodations, and complimentary WiFi and parking.",
-            "image": "https://lh3.googleusercontent.com/p/AF1QipOUlTaz6Ofamc431OocWVgqGlxS0zKmdr--vuSu=w287-h192-n-k-no-v1-rj",
+            "image": "images/award-winning.webp",
             "location": "148 Gould St, Frankston VIC 3199",
             "website": "https://katestravelexperience.eu/award-winning-beach-front-retreat-australia",
             "rating": 4.8
