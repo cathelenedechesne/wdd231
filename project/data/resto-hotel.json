@@ -4,14 +4,14 @@
             "name": "Waves on the Beach Restaurant",
             "description": "Italian. Vegetarian Friendly, Vegan Options",
             "image": "images/waves.webp",
-            "location": "2/1N Long Island Drive, Frankston, Victoria 3199 Australia",
+            "location": "2/1N Long Island Drive, Frankston VIC 3199",
             "menu": "https://www.wavesonthebeach.com.au/menu/"
         },
         {
             "name": "Sofia's Family Restaurant",
             "description": "Italian, Steakhouse, Seafood",
             "image": "https://d3skrbn3b616hn.cloudfront.net/au/images/restaurants/11014477.gif",
-            "location": "5N Pier Promenade Next to Franskston Pier, Frankston, Victoria 3199 Australia",
+            "location": "5N Pier Promenade Next to Franskston Pier, Frankston VIC 3199",
             "menu": "https://www.facebook.com/photo/?fbid=674652731333042&set=pb.100063649626778.-2207520000"
         },
         {
@@ -25,7 +25,7 @@
             "name": "Frankston Waterfront Restaurant",
             "description": "Seafood, Vegetarian Friendly, Vegan Options",
             "image": "images/waterfront.webp",
-            "location": "2 Kananook Creek Bvd South East Water Building Ground Floor, Frankston, Victoria 3199 Australia",
+            "location": "2 Kananook Creek Bvd South East Water Building Ground Floor, Frankston VIC 3199",
             "menu": "https://frankstonwaterfront.com.au/"
         },
         {
